@@ -1,0 +1,39 @@
+.. module:: requests.models
+
+Response Headers
+----------------
+
+We can view the server's response headers using a Python dictionary::
+
+    >>> r.headers
+    {
+        'content-encoding': 'gzip',
+        'transfer-encoding': 'chunked',
+        'connection': 'close',
+        'server': 'nginx/1.0.4',
+        'x-runtime': '148ms',
+        'etag': '"e1ca502697e5c9317743dc078f67693f"',
+        'content-type': 'application/json'
+    }
+
+The dictionary is special, though: it's made just for HTTP headers. According to
+`RFC 7230 <http://tools.ietf.org/html/rfc7230#section-3.2>`_, HTTP Header names
+are case-insensitive.
+
+So, we can access the headers using any capitalization we want::
+
+    >>> r.headers['Content-Type']
+    'application/json'
+
+    >>> r.headers.get('content-type')
+    'application/json'
+
+It is also special in that the server could have sent the same header multiple
+times with different values, but requests combines them so they can be
+represented in the dictionary within a single mapping, as per
+`RFC 7230 <http://tools.ietf.org/html/rfc7230#section-3.2>`_:
+
+    A recipient MAY combine multiple header fields with the same field name
+    into one "field-name: field-value" pair, without changing the semantics
+    of the message, by appending each subsequent field value to the combined
+    field value in order, separated by a comma.
