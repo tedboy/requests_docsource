@@ -1,5 +1,5 @@
-Stuffs from official doc
-""""""""""""""""""""""""
+Other Stuffs from official doc
+""""""""""""""""""""""""""""""
 http://docs.python-requests.org/en/master/
 
 .. note::

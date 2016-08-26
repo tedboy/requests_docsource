@@ -6,7 +6,7 @@ Quickstart
 .. toctree::
     :maxdepth: 2
     :caption: Contents
-    :name: mastertoc
+    :name: quickstart
 
     qs1
     qs2
