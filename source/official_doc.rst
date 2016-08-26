@@ -2,6 +2,10 @@ Stuffs from official doc
 """"""""""""""""""""""""
 http://docs.python-requests.org/en/master/
 
+.. note::
+    
+    Turned out most of the content here is better of browsing the original documentation page. So rst files below are included in the ``exclude_patterns`` list in ``conf.py``
+
 Requests is the only *Non-GMO* HTTP library for Python, safe for human
 consumption.
 
@@ -31,23 +35,6 @@ need for manual labor. There's no need to manually add query strings to your
 URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling
 are 100% automatic, powered by `urllib3 <https://github.com/shazow/urllib3>`_,
 which is embedded within Requests.
-
-##############
-The User Guide
-##############
-This part of the documentation, which is mostly prose, begins with some background information about Requests, then focuses on step-by-step instructions for getting the most out of Requests.
-
-.. toctree::
-   :maxdepth: 2
-   :numbered:
-   :caption: Contents
-   :name: userguide
-
-   official_doc.user.intro.rst
-   official_doc.user.quickstart.rst
-   official_doc.user.advanced.rst
-   official_doc.user.authentication.rst
-
 
 ###################
 The Community Guide

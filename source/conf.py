@@ -105,14 +105,8 @@ language = None
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = [
-# 'demo_autoclass.rst',
-# 'demo_automodule.rst',
-# 'demo_automodule.rst',
-# 'test3.rst',
-#'templates',
-# 'autosummary/pyspark.sql.*',
-# 'autosummary/pyspark.ml.*',
-# 'autosummary/pyspark.mllib.*',
+'official_doc.api.rst',
+'official_doc.community.*',
 ]
 
 # The reST default role (used for this markup: `text`) to use for all
