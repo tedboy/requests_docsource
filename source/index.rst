@@ -1,6 +1,8 @@
-Sphinx Skeleton
-===============
-Skeleton for creating my doc.
+Requests API
+============
+Requests API I created using the rst source codes and ``autosummary`` from http://docs.python-requests.org/en/master/
+
+.. important:: Content directly from official documentation page (`link <http://docs.python-requests.org/en/master/#the-user-guide>`__). I just created this page for my own liking since I love the readthedoc Sphinx theme.
 
 `Auto-generated api <./api.html>`__
 
